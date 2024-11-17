@@ -5,13 +5,9 @@
 2. [Features](#features)
 3. [Getting Started](#getting-started)
 4. [Environment Variables](#environment-variables)
-5. [Backend Setup](#backend-setup)
-6. [Frontend Setup](#frontend-setup)
-7. [Project Structure](#project-structure)
-8. [Usage](#usage)
-9. [Dependencies](#dependencies)
-10. [Contributing](#contributing)
-11. [License](#license)
+5. [Project Structure](#project-structure)
+6. [Usage](#usage)
+7. [Dependencies](#dependencies)
 
 ---
 
