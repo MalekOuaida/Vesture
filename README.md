@@ -86,7 +86,6 @@ The backend should now be running at http://localhost:3000.
 | `CLOUDINARY_API_KEY` | Cloudinary API key for image storage        |
 | `CLOUDINARY_API_SECRET` | Cloudinary API secret                    |
 | `CLARIFAI_API_KEY`   | Clarifai API key for image recognition      |
-|--------------------------------------------------------------------|
 
 ## Project Structure
 
