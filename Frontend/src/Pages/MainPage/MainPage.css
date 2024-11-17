@@ -1,0 +1,123 @@
+/* Author: Malek Ouaida
+   File: mainPage.css
+------------------------------------------------------------------------------------------
+
+   This file defines the main styling for the main page of the Vesture application, including 
+   general page styling, the navigation bar, and the masonry grid layout for displaying content. 
+   The styling focuses on a dark green theme with gold accents, providing a cohesive and elegant 
+   appearance across the page.
+
+   Main Sections:
+      General Styling      : Basic page settings, font, colors, and height for consistent layout
+      Navbar               : Styles for the header with navigation links and logo
+      Navigation Actions   : Styles for icons and buttons in the navbar for quick access features
+      Masonry Grid Layout  : Styles for a multi-column grid that adjusts for larger screens, 
+                             presenting items in a responsive masonry layout
+      Button Styling       : Custom styles for action buttons like navigation and logout buttons
+
+------------------------------------------------------------------------------------------*/
+
+/* General styling */
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0E2310; /* Dark green background */
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0E2310; /* Same green background */
+    color: #fff;
+}
+
+.logo {
+    width: 150px;
+}
+
+/* Navigation links */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-actions a {
+    text-decoration: none;
+    color: #FFD700; /* Gold color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-actions a:hover {
+    color: #FFB800; /* Lighter gold on hover */
+}
+
+/* Icon buttons for Scan, Closet, Upload */
+.nav-actions i {
+    font-size: 24px;
+    color: #FFD700; /* Gold color */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-actions i:hover {
+    color: #FFB800; /* Lighter gold on hover */
+}
+
+/* Masonry grid layout */
+.grid-container {
+    column-count: 4; /* 4 columns for larger screens */
+    column-gap: 20px; /* Space between columns */
+    padding: 20px;
+}
+
+.grid-item {
+    break-inside: avoid; /* Prevent breaking inside columns */
+    margin-bottom: 20px; /* Space between items */
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Maintain aspect ratio */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for navigation and logout buttons */
+.nav-button, .logout-button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5em;
+}
+
+.nav-button:hover, .logout-button:hover {
+    color: #888;
+}
+
+.logout-button {
+    margin-left: auto;
+}

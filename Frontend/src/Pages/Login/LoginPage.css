@@ -1,0 +1,216 @@
+/* Author: Malek Ouaida
+   File: LoginPage.css
+------------------------------------------------------------------------------------------
+
+   This file contains the styling for the LoginPage component, defining layout, colors, and
+   responsiveness for an engaging user experience. The page is divided into two main sections:
+   an image display section on the left and a login form section on the right. It also includes 
+   styles for form fields, buttons, and social login icons.
+
+   Main Sections:
+      General Body Styling   : Styles for body font, color, and layout.
+      Left Section           : Styles for the image display section.
+      Right Section          : Styles for the login form and content area.
+      Input Fields           : Styles for email and password input fields.
+      Buttons                : Styles for the login and sign-up buttons.
+      Social Login           : Styles for Google, Facebook, and Apple social login buttons.
+      Additional Text Styling: Styles for "Forgot Password?" text, and sign-up text with link.
+
+------------------------------------------------------------------------------------------*/
+
+/* General body styling */
+body {
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0E2310; /* Dark green */
+  color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login-page {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left section for image */
+.left-section {
+  flex: 1;
+  background-color: #0E2310;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* Right section for login form */
+.right-section {
+  flex: 1;
+  background-color: #0E2310;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-content {
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.login-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.login-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #F5F5DC; /* Ivory */
+  margin-bottom: 30px;
+}
+
+/* Input fields */
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #EDEDED; /* Light gray */
+  padding-bottom: 10px;
+}
+
+.icon-user, .icon-lock {
+  margin-right: 10px;
+  color: #EDEDED; /* Light gray */
+}
+
+.login-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-input::placeholder {
+  color: #EDEDED; /* Light gray */
+}
+
+.forgot-password {
+  text-align: right;
+  font-size: 14px;
+  color: #EDEDED; /* Light gray */
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* Buttons */
+.login-btn {
+  background-color: #D4AF37; /* Gold */
+  color: #0E2310; /* Dark green */
+  padding: 12px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #B99729; /* Darker Gold */
+}
+
+/* Sign Up button */
+.signup-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 12px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+  background-color: #fff;
+  color: #0E2310; /* Dark green */
+}
+
+/* Text styling */
+.or-text {
+  font-size: 14px;
+  color: #EDEDED; /* Light gray */
+  margin-bottom: 20px;
+}
+
+/* Social login buttons */
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px; /* Icon size */
+  color: #EDEDED; /* Light gray */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.social-btn:hover {
+  background-color: #360000; /* Dark red on hover */
+  color: #fff;
+  border-radius: 50%; /* Round button on hover */
+}
+
+/* Individual icon colors */
+.google-btn i {
+  color: #db4437; /* Google red */
+}
+
+.facebook-btn i {
+  color: #4267B2; /* Facebook blue */
+}
+
+.apple-btn i {
+  color: #333333; /* Apple black */
+}
+
+/* Sign-up text */
+.signup-text {
+  color: #EDEDED; /* Light gray */
+  font-size: 16px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signup-text a {
+  color: #F5F5DC; /* Ivory */
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signup-text a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
